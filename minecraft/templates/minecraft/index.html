@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- PREVIEW -->
+        <meta property="og:title" content="Phern.edu" />
+        <meta property="og:type" content="GLFNZ - Minecraft Modded Survival" />
+        <meta property="og:url" content="glfnz.pythonanywhere.com" />
+        <meta property="og:image" content="{% static 'minecraft/screenshots/preview.png' %}" />
+        <title>GLFNZ - Minecraft Server</title>
+        <link rel="icon" href="{% static 'minecraft/server-icon.png' %}">
+        <link rel="stylesheet" href="{% static 'minecraft/style.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=VT323&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="server_container" class="shadow">
+                <img src="{% static 'minecraft/server-icon.png' %}" class="round">
+                <div class="pixl address">Subdomain: Gelo.apexmc.co<br>IP: 64.120.89.131:25598</div>
+            </div>
+            <table>
+                <tr>
+                    <th>Filename</th>
+                    <th colspan="3">Download Links</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>glfnz-modpack_1.12.2_R1.zip</td>
+                    <td><a href="https://mega.nz/file/y0sThQhI#YhFajeL2rBd3nz_An4Cyqhn6AiDQP-rjY1IHRByubJY">⬇️ Mega.nz</a></td>
+                    <td><a href="https://www.mediafire.com/file/ggw53ahnj5mrg23/glfnz-modpack_1.12.2_R1.zip/file">⬇️ Mediafire</a></td>
+                    <td><a href="https://www.dropbox.com/s/koxqf9o9e0ug463/glfnz-modpack_1.12.2_R1.zip?dl=1">⬇️ Dropbox</a></td>
+                    <td>Contains all mods list for best experience</td>
+                </tr>
+                <tr>
+                    <td>glfnz-modpack_1.12.2_R1_noSchematica.zip</a></td>
+                    <td><a href="https://mega.nz/file/T10hFKhD#UVNgDX1D53JHbBapZfqrelycYnPzpDvLOVdE29d3PYw">⬇️ Mega.nz</a></td>
+                    <td><a href="https://www.mediafire.com/file/7jlj5yfw36t0kp5/glfnz-modpack_1.12.2_R1_noSchematica.zip/file">⬇️ Mediafire</a></td>
+                    <td><a href="https://www.dropbox.com/s/il9xr3ur6rzhm0a/glfnz-modpack_1.12.2_R1_noSchematica.zip?dl=1">⬇️ Dropbox</a></td>
+                    <td>Contains all mods except Schematica mod</td>
+                </tr>
+                <tr>
+                    <td>glfnz-modpack_1.12.2_R1_update.zip</td>
+                    <td><a href="https://mega.nz/file/a0NDSSgA#fvVnzwVhDUfe-A4N_Bn881zod8R12S1ArtT0t57NEc0">⬇️ Mega.nz</a></td>
+                    <td><a href="https://www.mediafire.com/file/pce70x629ps5aw8/glfnz-modpack_1.12.2_R1_update.zip/file">⬇️ Mediafire</a></td>
+                    <td><a href="https://www.dropbox.com/s/6h9yjulxa938uv9/glfnz-modpack_1.12.2_R1_update.zip?dl=1">⬇️ Dropbox</a></td>
+                    <td>Contains newly added mods</td>
+                </tr>
+                <tr>
+                    <td>glfnz-modpack_1.12.2_R1_update_noSchematica.zip</td>
+                    <td><a href="https://mega.nz/file/WlE12IYA#AQAixZM0cFxRavL6sd85XEc_ewBsRV9LFw0aDc8yajM">⬇️ Mega.nz</a></td>
+                    <td><a href="https://www.mediafire.com/file/wb3emffj7rmqy4x/glfnz-modpack_1.12.2_R1_update_noSchematica.zip/file">⬇️ Mediafire</a></td>
+                    <td><a href="https://www.dropbox.com/s/195k84a27lx000g/glfnz-modpack_1.12.2_R1_update_noSchematica.zip?dl=1">⬇️ Dropbox</a></td>
+                    <td>Contains newly added mods except Schematica mod</td>
+                </tr>
+            </table>
+            Installation Instructions:<br>
+            <ol>
+                <li>Open your .minecraft folder by opening File Explorer and typing "%appdata%/.minecraft" on the address bar.</li>
+                <img class="ss" src="{% static 'minecraft/screenshots/1.png' %}">
+                <li>Go to your mods folder and make sure the folder is empty unless your updating from a previous version.</li>
+                <li>Download your preffered modpack from the table above and extract it.</li>
+                <img class="ss" src="{% static 'minecraft/screenshots/2.png' %}">
+                <li>Place all the .jar files to the mods folder located in the .minecraft folder (Repeat step #1 to go to .minecraft folder)</li>
+                <img class="ss" src="{% static 'minecraft/screenshots/3.png' %}">
+                <li>Then place the files INSIDE the "config" folder to the config folder in .minecraft.</li>
+                <div class="important">IMPORTANT: Put the files INSIDE the config folder (not the config folder itself) in the config folder in .minecraft</div>
+                <div class="important">IMPORTANT: If you encounter an error saying that you already have the file/folder, replace the old files with the new ones.</div>
+                <img class="ss" src="{% static 'minecraft/screenshots/4.png' %}">
+                <li>Check if your mods folder has all 50 jar files and if you placed the config files properly.</li>
+            </ol>
+        </div>
+    </body>
+</html>
